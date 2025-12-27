@@ -1,0 +1,26 @@
+import React from 'react'
+import Navbar from './Layout/Navbar'
+import HeroSection from './Layout/HeroSection'
+import  Services  from './Layout/Services'
+import Gallery from './Layout/gallery'
+import Testimonials from './Layout/Testimonial'
+import Pricing from './Layout/Price'
+import LocationContact from './Layout/Contact'
+import Footer from './Layout/Footer'
+
+const App = () => {
+  return (
+  <>
+    <Navbar />
+    <HeroSection />
+    <Services />
+    <Gallery />
+    <Testimonials />
+    <Pricing />
+    <LocationContact />
+    <Footer />
+  </>
+  )
+}
+
+export default App
