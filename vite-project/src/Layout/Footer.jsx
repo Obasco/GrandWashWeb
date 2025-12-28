@@ -6,6 +6,7 @@ import {
   Linkedin,
   ArrowRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function Footer() {
@@ -63,59 +64,59 @@ export default function Footer() {
             <h4 className="text-white font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  to="/"
                   className="text-[#A0A0A0] hover:text-[#6FA3E3] transition-colors duration-300 flex items-center gap-2 group"
                 >
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>{" "}
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#services"
+                <Link
+                  to="/services"
                   className="text-[#A0A0A0] hover:text-[#6FA3E3] transition-colors duration-300 flex items-center gap-2 group"
                 >
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>{" "}
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#gallery"
+                <Link
+                  to="/gallery"
                   className="text-[#A0A0A0] hover:text-[#6FA3E3] transition-colors duration-300 flex items-center gap-2 group"
                 >
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>{" "}
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#pricing"
+                <Link
+                  to="/pricing"
                   className="text-[#A0A0A0] hover:text-[#6FA3E3] transition-colors duration-300 flex items-center gap-2 group"
                 >
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>{" "}
                   Pricing
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="text-[#A0A0A0] hover:text-[#6FA3E3] transition-colors duration-300 flex items-center gap-2 group"
                 >
                   <span className="group-hover:translate-x-1 transition-transform">
                     →
                   </span>{" "}
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

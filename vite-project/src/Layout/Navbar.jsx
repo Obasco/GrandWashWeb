@@ -35,13 +35,13 @@ const Navbar = () => {
           <ul className="hidden lg:flex items-center gap-8">
             {navLinks.map((link, idx) => (
               <li key={idx}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="text-[#8A8A8A] hover:text-white transition-colors duration-300 font-medium relative group"
                 >
                   {link.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#6FA3E3] group-hover:w-full transition-all duration-300"></span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -80,13 +80,13 @@ const Navbar = () => {
             <ul className="flex flex-col gap-4 px-6 py-6">
               {navLinks.map((link, idx) => (
                 <li key={idx}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-[#8A8A8A] hover:text-[#6FA3E3] transition-colors duration-300 font-medium block py-2"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <button className="w-full bg-gradient-to-r from-[#6FA3E3] to-[#5a8fd4] text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-300 mt-2">
