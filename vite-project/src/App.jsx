@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Layout/Navbar";
 import HeroSection from "./Layout/HeroSection";
 import Services from "./Layout/Services";
@@ -12,12 +13,26 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <Services />
-      <Gallery />
-      <Testimonials />
-      <Pricing />
-      <LocationContact />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <Services />
+              <Gallery />
+              <Testimonials />
+              <Pricing />
+              <LocationContact />
+            </>
+          }
+        />
+        <Route path="/services" element={<Services />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/contact" element={<LocationContact />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+      </Routes>
       <Footer />
     </>
   );
