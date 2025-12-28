@@ -1,14 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "npx vite build",
   "outputDirectory": "dist",
-  "framework": "vite",
-  "env": {
-    "NODE_ENV": "production"
-  },
   "rewrites": [
-    {
-      "source": "/:path((?!.*\\.).*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
