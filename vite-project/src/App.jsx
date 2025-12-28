@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Layout/Navbar";
 import HeroSection from "./Layout/HeroSection";
 import Services from "./Layout/Services";
-import Gallery from "./Layout/Gallery";
+import Gallery from "./Layout/gallery";
 import Testimonials from "./Layout/Testimonial";
 import Pricing from "./Layout/Price";
 import LocationContact from "./Layout/Contact";
